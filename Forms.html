@@ -42,13 +42,17 @@
             <label for="lang">Select Your Programming Languages</label>
             <select name="lang" id="lang">
                 <option >Select your language</option>
+                <optgroup label="Programming Languages">
                 <option value="C">C</option>
                 <option value="C++">C++</option>
                 <option value="Java">Java</option>
+                </optgroup>
+                <optgroup label="Frontend Technology">
                 <option value="Python">Python</option>
                 <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="Javascript">Javascript</option>
+                </optgroup>
             </select>
             <br><br>
             <label for="pass">Password</label>
@@ -60,10 +64,13 @@
             <input type="file">
             <br>
             <br>
+            <label for="address">Address</label>
+            <textarea name="text" id="add" rows="5" cols="20"></textarea>
+            <br>
+            <br>
             <input type="submit" value="submit">
             <input type="reset" value="reset">
         </fieldset>
-
     </form>
 </body>
 </html>
@@ -77,4 +84,7 @@ legend create caption
 
 maxlength maximum of character accepted
 minlength 
+pattern
+step
+novalidate
 -->
