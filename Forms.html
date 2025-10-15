@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="action.html" target="_blank" name="Biodata" method="get">
+        <fieldset>
+            <legend>Biodata</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="ENter Your name" required>
+            <br>
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <br>
+            <label for="tel">Phone</label>
+            <input type="tel" name="tel" id="tel" required placeholder="Enter phone number">
+            <br><br>
+            <label for="attempt">Attempt:</label>
+            <input type="number" id="attempt" name="attempt" min="1" max="5" id="attempt">
+            <br><br>
+            <label for="Email">Email:</label>
+            <input type="email" placeholder="ENter email" name="email"  id="email" required>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <br><br>
+            <label for="check">Vehicles you have:</label>
+            <input type="checkbox" id="bike" name="vehicle1" value="Bike">
+            <label for="bike">Bike</label>
+            <input type="checkbox" id="car" name="vehicle2" value="car" checked>
+            <label for="car">Car</label>
+            <br><br>
+            <label for="lang">Select Your Programming Languages</label>
+            <select name="lang" id="lang">
+                <option >Select your language</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+            </select>
+            <br><br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass" required>
+            <label for="appoint">Appointement</label>
+            <input type="time" id="appoint" name="appoint" required>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+
+    </form>
+</body>
+</html>
+<!-- 
+methods get and post
+default get
+action give response page after submitting
+
+fieldset differentiate different fiels of form
+legend create caption
+-->
